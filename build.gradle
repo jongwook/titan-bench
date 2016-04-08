@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "graphbench.TitanBench"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.thinkaurelius.titan', name: 'titan-core', version: '1.0.0'
+    compile group: 'com.thinkaurelius.titan', name: 'titan-berkeleyje', version: '1.0.0'
+    compile group: 'com.thinkaurelius.titan', name: 'titan-es', version: '1.0.0'
+}
