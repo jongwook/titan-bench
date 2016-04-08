@@ -26,7 +26,7 @@ public class TitanBench {
             for (int i = 0; i < 100000; i++) {
                 TitanVertex v1 = graph.addVertex("left-" + i);
                 TitanVertex v2 = graph.addVertex("right-" + i);
-                v1.addEdge("e", v2);
+                v1.addEdge("e", v2, "i", i);
                 if (i % 100 == 0) {
                     System.out.printf("Added %d, %.3f seconds\n", i, (currentTimeMillis() - started) / 1000.0);
                 }
